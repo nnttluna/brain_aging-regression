@@ -21,38 +21,16 @@ special supervision.
 
 # Results
 
-The highest accuracy model, proved by R2 = 0.9084, is given by 
+The regression models were applied to 4226 instances in order to predict the age of the
+brain. With the R^2 value, it allows for comparing the differences between observed data and a
+fitted trend to calculate the dependent variable variation. The highest accuracy model, proved by R2 = 0.9084, is given by 
 penalized model, which is a linear regression method. The gradient boosting trees model is 
 providing the lowest value of R^2 = 0.8590. However, to prevent overfitting, the model is only 
 running with 20 estimators and 2 layers of separation. The model definitely can be improved 
 with larger number of estimators and deeper differentiation. 
 
-The regression models were applied to 4226 instances in order to predict the age of the
-brain. With the R
-2 value, it allows for comparing the differences between observed data and a
-fitted trend to calculate the dependent variable variation. For the R squared value obtained from
-comparing all models, the best results were yielded from the Bagged model, Multiple linear
-regression and support vector machine with R
-2
-, and the worst performing models included
-Decision Trees, Partial Least squares, and Neural Network(1). With the top performers being
-from different regression methods such as linear regression, non-linear and trees, they all fit the
-data observed with R
-2 values above 0.8. As for the worst case R
-2 models, we observe them to
-be less than 0.8 meaning that the points are far from the best fit trend line. All the other models
-not discussed within the top 3 and bottom 3 performers yielded results between 0.8 and 0.84
-which shows a general regression model that fits the data well with the trend line. Furthermore,
-both models from kNN both reproduced similar values within the r^2 table, only differing by 0.01
-in R^2 value. On the other hand,an important note to be made is that Neural network(1)
-performed at 0.78, Neural Network(2) performed at 0.87, and Neural Network(3) performed at
-0.83. This can be explained by differing input numbers varying from 3,128,and 138 as well as
-differing hidden layers from 8, 3 and 1 and different number of sized layers used. We found that
-better performing models that yielded over 0.8 had more hidden layers than the neural network
-model that performed only at 0.78.
-As per Figure 3 and Table 2, it can be seen that the three models with the best Root
-Mean Square Error (RMSE) results respectively were gradient boosted, random forest trees,
-and multiple linear regression. Overall, these models having the lowest RMSE values meant
+
+Overall, these models having the lowest RMSE values meant
 that the predicted values were relatively accurate and that these three algorithms were capable
 of correctly predicting a subject’s age within a margin of 2.61 years to 7.90 years. As boosted
 trees by design function to train low bias estimators in conjunction with an attempt to predict the
